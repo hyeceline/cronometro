@@ -3,17 +3,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
 
 :root {
-  --cor-de-fundo: #241d37;
+  --cor-de-fundo: #eee8df;
   --amarelinho: #f8dfb1;
-  --lilaszinho: #ac93b8;
-  --branco: #ffffff;
-  --botao-ativo: #3a375e;
-  --botao-inativo: rgba(58, 55, 94, 0.5);
-  --texto-fundo: rgba(58, 55, 94, 0.3);
+  --lilaszinho: #b48a63;
+  --branco: #667179;
+  --branco2: rgb(238, 231, 231);
+  --azul: #8fa2ad;
+  --azulbebe: #60869c;
+  --botao-ativo: #b49885;
+  --botao-inativo: rgba(255, 227, 174, 0.74);
+  --texto-fundo: rgba(255, 255, 255, 0.3);
 }
 
 body {
-  background-color: var(--cor-de-fundo);
+  background-image: url(s.png);
   color: var(--branco);
   font-family: "Schoolbell", sans-serif;
 }
@@ -43,16 +46,16 @@ body {
 .botao {
   font-family: "Ubuntu", sans-serif;
   background-color: var(--botao-inativo);
-  color: var(--branco);
+  color: var(--lilaszinho);
   display: flex;
   justify-content: center;
   padding: 1em;
   font-size: 18px;
   align-items: center;
   width: 100%;
-  border-bottom: 4px solid var(--botao-ativo);
-  border-left: 2px solid var(--botao-ativo);
-  border-right: 2px solid var(--botao-ativo);
+  border-bottom: 4px solid var(--lilaszinho);
+  border-left: 2px solid var(--lilaszinho);
+  border-right: 2px solid var(--lilaszinho);
   border-top: none;
 }
 
@@ -81,7 +84,7 @@ body {
 .aba-conteudo-titulo-secundario {
   font-family:"Ubuntu", sans-serif;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   color: var(--lilaszinho);
 }
 
@@ -104,19 +107,20 @@ body {
 }
 
 .contador-digito-texto{
-  color: var(--amarelinho);
+  color: var(--lilaszinho);
   font-size: 20 px;
   margin: 0;
 }
 
 
 .botao.ativo {
-  background-color: var(--botao-ativo);
-  border-bottom: 4px solid var(--lilaszinho);
+  border-bottom: 4px solid var(--azulbebe);
+  background-color: var(--azul);
+  color: var(--branco2);
 }
 
 .abas-textos {
-  background-color: var(--texto-fundo);
+  background-color: var(--cor-de-fundo);
   padding: 40px;
   border-radius: 0 0 40px 40px;
 }
